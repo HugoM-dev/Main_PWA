@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
-    <title>Café Finigan – menu</title>
+    <title>Hugo's Cat Café – menu</title>
     <meta name="description" content="Browse the Café Finigan breakfast, lunch, and drinks menu. Add items to your pre-order and collect them at your chosen time.">
     <meta name="keywords" content="Café Finigan menu, breakfast, lunch, drinks, pre-order">
     <meta name="author" content="Hugo Moulynox/ASC">
@@ -18,13 +18,33 @@
     <!-- ---------- Brand Section (Logo + Name) ---------- -->
     <div class="brand">
       <img src="../static/images/logo.png" alt="Café Finigan logo" class="logo">
-      <span class="brand-name">Café Finigan</span>
+      <ul class="brand-name">
+        <li><a href="index.html">Hugo's Cat Café</a></li>
+      </ul>
     </div>
 
     <!-- ---------- Navigation Menu ---------- -->
     <nav aria-label="Primary">
       <ul class="nav-list">
         <li><a href="menu.html">Menu</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="adoption.html">Adoption</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="checkout.html">Cart</a></li>
       </ul>
     </nav>
 
@@ -61,8 +81,8 @@
 
           <!-- Price and Add button on the same line -->
           <div class="menu-actions">
-            <span class="price">$12.50</span>
-            <button class="add-btn" disabled>Add</button>
+            <span class="price">$17.90</span>
+            <button class="add-btn">Add</button>
           </div>
         </div>
       </article>
@@ -78,7 +98,7 @@
 
           <!-- Price and Add button on the same line -->
           <div class="menu-actions">
-            <span class="price">$12.50</span>
+            <span class="price">$18.50</span>
             <button class="add-btn" disabled>Add</button>
           </div>
         </div>
@@ -87,10 +107,13 @@
     </div>
   </div>
 
+  <section class="menu-section" id="breakfast">
+  <div class="container">
+
   <div class="menu-card">
       <h2>Lunch</h2>
 
-      <!------------ One menu item ------------>
+      <!------------ Lunch ------------>
       <article class="menu-item">
         <div class="menu-thumb">
           <img src="../static/images/burger.jpg" alt="Burger">
@@ -102,7 +125,24 @@
 
           <!-- Price and Add button on the same line -->
           <div class="menu-actions">
-            <span class="price">$12.50</span>
+            <span class="price">$20.90</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="../static/images/EggBacon.jpg" alt="Burger">
+        </div>
+
+        <div class="menu-info">
+          <h3>Egg and Bacon Wrap</h3>
+          <p class="desc">Free range eggs and bacon on a freshly backed tortilla with barbecue sauce and greens.</p>
+
+          <!-- Price and Add button on the same line -->
+          <div class="menu-actions">
+            <span class="price">$14.50</span>
             <button class="add-btn" disabled>Add</button>
           </div>
         </div>
@@ -119,7 +159,51 @@
 
           <!-- Price and Add button on the same line -->
           <div class="menu-actions">
-            <span class="price">$12.50</span>
+            <span class="price">$27.30</span>
+            <button class="add-btn" disabled>Add</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <section class="menu-section" id="breakfast">
+  <div class="container">
+
+  <div class="menu-card">
+      <h2>Drinks</h2>
+
+      <!------------ Drinks ------------>
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="../static/images/lipton.jpg" alt="LiptonIceTea">
+        </div>
+
+        <div class="menu-info">
+          <h3>Lipton Ice Tea</h3>
+          <p class="desc">Served over ice.</p>
+
+          <!-- Price and Add button on the same line -->
+          <div class="menu-actions">
+            <span class="price">$4</span>
+            <button class="add-btn" disabled>Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="../static/images/Spel.jpg" alt="San Peligrino">
+        </div>
+
+        <div class="menu-info">
+          <h3>San Peligrino</h3>
+          <p class="desc">Served by the bottle.</p>
+
+          <!-- Price and Add button on the same line -->
+          <div class="menu-actions">
+            <span class="price">$18</span>
             <button class="add-btn" disabled>Add</button>
           </div>
         </div>

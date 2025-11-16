@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Hugo's Cat Café – Pre-order Lunch Online</title>
+    <meta name="description" content="order food and drinks from Café Finigan in advance. Browse the menu and pick up your order at your chosen time.">
+    <meta name="keywords" content="café, food, school lunch, pre-order, Finigan">
+    <meta name="author" content="Hugo Moulynox">
+    <link rel="icon" href="../static/images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- ---------- Header and Navigation ---------- -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <!-- ---------- Brand Section (Logo + Name) ---------- -->
+    <div class="brand">
+      <img src="../static/images/logo.png" alt="Café Finigan logo" class="logo">
+      <ul class="brand-name">
+        <li><a href="index.html">Hugo's Cat Café</a></li>
+      </ul>
+    </div>
+
+    <!-- ---------- Navigation Menu ---------- -->
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="adoption.html">Adoption</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="checkout.html">Cart</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<section class="checkout-section" id="checkout">
+  <div class="checkout-card">
+    <div class="container">
+
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="address"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="1 W. 15th Street">
+            <label for="city"><i class="institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Armidale">
+        
+            <div class="row">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NSW">
+                <label for="post-code">Post Code</label>
+                <input type="text" id="post-code" name="post-code" placeholder="2350">
+            </div>
+          </div>
+
+            <h3>Payment</h3>
+            <label for="ccname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2025">
+
+              
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="000">
+          </div>
+
+    </div>
+  </div>
+  </div>
+
+    <article class="checkout-card">
+    <div class="container">
+      <h3>Cart
+        <span class="price" style="color:black">
+          <i class="shopping-cart"></i>
+          <b>4</b>
+        </span>
+    </h3>
+      <!--Item 1-->
+      <p><div class="menu-thumb">
+          <img src="../static/images/burger.jpg" alt="Burger">
+        </div><span class="price">$20.90</span>
+        <div class="menu-info">
+          <h3>Chicken Burger</h3></p>
+    <!--Item 2-->
+      <p><div class="menu-thumb">
+          <img src="../static/images/fishnchips.jpg" alt="Fish and Chips">
+        </div><span class="price">$27.30</span>
+        <div class="menu-info">
+          <h3>Fish and Chips</h3></p>
+    <!--Item 3-->
+      <p><div class="menu-thumb">
+          <img src="../static/images/Spel.jpg" alt="San Peligrino">
+        </div><span class="price">$18</span>
+        <div class="menu-info">
+          <h3>San Peligrino</h3></p>
+    <!--Item 4 -->
+      <p><div class="menu-thumb">
+          <img src="../static/images/lipton.jpg" alt="LiptonIceTea">
+        </div><span class="price">$4</span>
+        <div class="menu-info">
+          <h3>Lipton Ice Tea</h3></p>
+    <!--Total-->
+      <hr>
+      <h4>Total <span class="price" style="color:black"><b>$70.20</b></span></h4>
+      <button class="add-btn" disabled>Continue to checkout</button>
+      </article>
+  </div>
+</div>
+
+
+</section>
+
+<!-- ---------- Footer Section ---------- -->
+<footer class="site-footer">
+  <div class="container">
+    © 2025 Café Finigan • <a href="#">Privacy</a>
+  </div>
+</footer>
+</body>
+</html>
