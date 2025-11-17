@@ -26,27 +26,60 @@
     <!-- ---------- Navigation Menu ---------- -->
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="menu.html">Menu</a></li>
+        <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
       </ul>
     </nav>
 
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="adoption.html">Adoption</a></li>
+        <li class="hideOnMobile"><a href="adoption.html">Adoption</a></li>
       </ul>
     </nav>
 
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
       </ul>
     </nav>
 
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="checkout.html">Cart</a></li>
+        <li class="hideOnMobile"><a href="booking_menu.html">Booking</a></li>
       </ul>
     </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li class="hideOnMobile"><a href="checkout.html">Cart</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking_menu.html">Book A Time</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="ourcats.html">Our Cats</a></li>
+            <li><a href="adoption.html">Adopt A Cat</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="checkout.html">Cart</a></li>
+        </ul>
+        <ul>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
 
   </div>
 </header>

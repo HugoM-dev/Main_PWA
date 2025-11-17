@@ -26,39 +26,122 @@
     <!-- ---------- Navigation Menu ---------- -->
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="menu.html">Menu</a></li>
+        <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
       </ul>
     </nav>
 
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="adoption.html">Adoption</a></li>
+        <li class="hideOnMobile"><a href="adoption.html">Adoption</a></li>
       </ul>
     </nav>
 
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
       </ul>
     </nav>
 
     <nav aria-label="Primary">
       <ul class="nav-list">
-        <li><a href="checkout.html">Cart</a></li>
+        <li class="hideOnMobile"><a href="booking_menu.html">Booking</a></li>
       </ul>
     </nav>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li class="hideOnMobile"><a href="checkout.html">Cart</a></li>
+      </ul>
+    </nav>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking_menu.html">Book A Time</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="ourcats.html">Our Cats</a></li>
+            <li><a href="adoption.html">Adopt A Cat</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="checkout.html">Cart</a></li>
+        </ul>
+        <ul>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
 
   </div>
 </header>
 
-<!-- ---------- Hero Section ---------- -->
-<section class="hero">
-  <img src="../static/images/hero.jpg" alt="Cafe table with coffee and plants">
-  <div class="hero-overlay container">
-    <h1>Ready when you are!</h1>
-    <p class="lead">Order ahead and skip the queue.</p>
+<section class="menu-section" id="breakfast">
+  <div class="checkout-card">
+    <div class="container">
+
+    <form action="reservation.php" method="post">
+      <div class="col-50">
+            <h3>Booking Information</h3>
+            <label for="fname"><i class="user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="address"></i> Phone</label>
+            <input type="text" id="adr" name="address" placeholder="123-456-7890">
+      </div>
+      <hr>
+      <div class="elem-group inlined">
+        <label for="adult">Adults $25/h</label>
+        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="child">Children $15/h</label>
+        <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkin-date">Booking Date</label>
+        <input type="date" id="booking-date" name="booking-date" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkin-date">Booking Time</label>
+        <input type="time" id="booking-time" name="booking-time" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="cat-prefrences">Cat Preference?</label>
+        <select name="cat" id="cats">
+          <option>Craig</option>
+          <option>Toby</option>
+          <option>Tibbles</option>
+          <option>Caty McCatface</option>
+          <option value="N/A">N/A</option>
+        </select>
+      </div>
+      <div class="elem-group">
+        <label for="room-selection">Select Room Preference</label>
+        <select id="room-selection" name="room_preference" required>
+            <option value="connecting">Open Room</option>
+            <option value="adjoining">Private Room</option>
+            <option value="adjacent">Adoption Appointment</option>
+        </select>
+      </div>
+      <hr>
+      <div class="elem-group">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+      </div>
+      <button type="submit">Book The Room</button>
+    </form>
+    </div>
   </div>
-</section>
+</section>  
 
 <!-- ---------- Tagline Section ---------- -->
 <section class="tagline">

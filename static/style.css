@@ -51,7 +51,11 @@ ul { margin: 0; padding: 0; }
   cursor:default;
 }
 
-.logo { height:52px; width:auto; }
+.logo { 
+  height:52px; 
+  display: inline-block; 
+  width:auto; 
+}
 
 .brand-name {
   list-style: none;
@@ -390,7 +394,7 @@ ul { margin: 0; padding: 0; }
   border: 1px solid #b09076;
   background: #b48767;
   color: #fff;
-  padding: 0.45rem 0.9rem;
+  padding: 0.45rem 1.9rem;
   border-radius: 10px;
   font-weight: 600;
   line-height: 1;
@@ -484,3 +488,99 @@ span.price {
     margin-top: 6px;
   }
 }
+.sidebar {
+    list-style: none;
+    position: fixed;
+    left: 5;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(238, 238, 238, 0.362);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.135);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+.sidebar li{
+    width: 90%;
+}
+.sidebar a{
+    width: 90%;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+   .hideOnMobile{
+       display: none;
+   } 
+   .menu-button{
+    display: block;
+   }    
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: system-ui, sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: system-ui, sans-serif;
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: system-ui, sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
